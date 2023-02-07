@@ -33,8 +33,7 @@ app.use(function (req, res, next) {
 
 const firebaseConfig = {
   serviceAccount: "./serviceAccountKey.json",
-  databaseURL:
-    "https://skipli-20230203-default-rtdb.asia-southeast1.firebasedatabase.app/",
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
 };
 
 // Initialize Firebase
